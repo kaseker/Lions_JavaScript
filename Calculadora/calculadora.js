@@ -1,9 +1,12 @@
 import PromptSync from "prompt-sync"
-const prompt = PromptSync()
+import adicao from "./adicao.js"
+import subtracao from "./subtracao.js"
+import multiplicacao from "./multiplicacao.js"
+import divisao from "./divisao.js"
 
+const prompt = PromptSync()
 let numero1
 let numero2
-let resultado
 let opcao
 
 console.log(`
@@ -16,8 +19,7 @@ opcao = parseInt (prompt ('digite a opção desejada: '))
 
 switch (opcao) {
     case 1:
-        adicao()
-        console.log(resultado);
+        console.log(adicao());
         break;
     case 2:
         subtracao()
